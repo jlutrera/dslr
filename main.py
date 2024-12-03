@@ -4,6 +4,8 @@ from programs.describe import describe
 from programs.histogram import histogram
 from programs.scatter_plot import scatter_plot
 from programs.pair_plot import pair_plot
+from programs.logreg_predict import logreg_predict
+from programs.logreg_train import logreg_train
 from programs.utils import *
 import sys, csv, os
 from collections import defaultdict
@@ -74,12 +76,13 @@ def main():
 		elif option == "4":
 			pair_plot(data)
 		elif option == "5":
-			print("Not implemented yet.")
+			logreg_train(data)
+			logreg_predict()
 		elif option == "6":
 			break
 		else:
 			print(f"{RED}Error: {RESET}Invalid option. Try again.")
-		wait_for_keypress()
+			wait_for_keypress()
 	print("BYE!")
 
 if __name__ == "__main__":
