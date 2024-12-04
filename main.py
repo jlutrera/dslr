@@ -36,7 +36,7 @@ def print_menu():
 	print(f"  {YELLOW}5.{RESET} Train the model and predict")
 	print(f"  {YELLOW}6.{RESET} Exit")
 	print()
-	option = input(f"Select an option: {YELLOW}")
+	option = input(f"  Select an option: {YELLOW}")
 	print(f"{RESET}")
 
 	return option
