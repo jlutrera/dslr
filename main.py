@@ -26,7 +26,7 @@ def is_float(value):
 		return False
 
 def print_menu():
-	clear_terminal()
+	#clear_terminal()
 	print()
 	print(f"{YELLOW}Available programs:{RESET}\n")
 	print(f"  {YELLOW}1.{RESET} Statistics")
